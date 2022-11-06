@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block navbar%}
+{%endblock navbar%}
+
+{%block content%}
+<div class="container h-100 d-flex justify-content-center align-items-center">
+  
+      <div class="container w-25">
+        <div  style="padding: 10px;">
+            <div class="card" style="width: 30rem; ">
+                <img class="thumbnail" src="{{product.imagelink}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">{{product.name}}</p>
+                </div>
+            </div>
+        </div>
+
+        
+        </div>
+
+     
+        <div class="container w-25">
+            <div class="row">
+            <div class="col align-self-start">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item list-group-item-dark"><img class="logo" src="{% static "images/0x0.png" %}" alt="elitehub logo"></li>
+                    <li class="list-group-item list-group-item-dark"><a class="btn-dark" href="{{product.elitehub}}">Visit</a></li>
+                    <li class="list-group-item list-group-item-dark">{{elitehub}}</li>
+                </ul>
+            </div>
+            <div class="col align-self-center">
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item list-group-item-dark"><img class="logo" src="{% static "images/Amazon.png" %}" alt="Amazon logo"></li>
+                    <li class="list-group-item list-group-item-dark"><a class="btn-dark" href="{{product.amazon}}">Visit</a></li>
+                    <li class="list-group-item list-group-item-dark">{{amazon}}</li>
+                </ul>
+            </div>
+            <div class="col align-self-end">
+                <ul class="list-group list-group-horizontal-md">
+                    <li class="list-group-item list-group-item-dark"><img class="logo" src="{% static "images/Flipkart-Emblem.png" %}" alt="flipkart logo"></li>
+                    <li class="list-group-item list-group-item-dark"><a class="btn-dark" href="{{product.flipkart}}">Visit</a></li>
+                    <li class="list-group-item list-group-item-dark">{{flipkart}}</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      </div>
+      <hr>
+    
+</div>
+<div>
+    <h2 style="color: white;">
+        {{product.name}}
+    </h2>
+    <p style="color: white;"> 
+            {{product.description}} 
+    </p>
+</div>
+        
+            
+{%endblock content%}

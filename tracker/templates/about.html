@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{%block navbar%}
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand">GetAPrice</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href={% url 'home' %}>Home</a>
+            <a class="nav-link active" aria-current="page" href={% url 'about' %}>About Us</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+{%endblock navbar%}
+
+{%block content%}
+            <p style="color: white;"> GetaPrice is an E-Commerce website project by:</p>
+            <p style="color: white;">
+                <ul style="color: white;">
+                    <li>Ankit Raj</li>
+                    <li>Omar Zaffar Khan</li>
+                    <li>Nair Rishabh Jisha Sadanand</li>
+                    <li>Anand Kumar Prasad</li>
+                </ul>
+            </p>
+            <p style="color: white;">Under the guidance of</p>
+            <p style="color: white;">Prof. Gajendra Gayakwad</p>
+            <p style="color: white;">{Assistant Professor}</p>
+            <p style="color: white;">Department of Computer Science & Engineering</p>
+            <p style="color: white;">SISTec</p>
+            <p style="color: white;">This project was assigned to us as a Major Project</p>
+{%endblock content%}
