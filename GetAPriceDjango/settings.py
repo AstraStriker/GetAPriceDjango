@@ -87,6 +87,26 @@ DATABASES = {
         'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }
+
+        # 'ENGINE': 'mysql.connector.django',  
+        # 'NAME': 'getaprice',  
+        # 'USER': 'root',  
+        # 'PASSWORD': 'admin',  
+        # 'HOST': '127.0.0.1',  
+        # 'PORT': '3306',  
+        # 'OPTIONS': {  
+        #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        # }
+
+        # 'ENGINE': 'django.db.backends.mysql',  
+        # 'NAME': 'sql12548111',  
+        # 'USER': 'sql12548111',  
+        # 'PASSWORD': 'hueYnDfClw',  
+        # 'HOST': 'sql12.freesqldatabase.com',  
+        # 'PORT': '3306',  
+        # 'OPTIONS': {  
+        #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        # }
     }
 }
 

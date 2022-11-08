@@ -11,6 +11,10 @@ class scrapper_amazon:
 
         soup = BeautifulSoup(page.content, 'html.parser')
 
-        price = soup.find("span", "a-offscreen").get_text()
+        try:
+            price = soup.find("span", "a-offscreen").get_text()
+        except:
+            price = 'NaN'
+
 
         return price

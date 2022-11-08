@@ -12,17 +12,24 @@ class scrapper_elitehub:
 
         soup = BeautifulSoup(page.content, 'html.parser')
 
-        price = soup.find("p","price").get_text()
-        price = price.split(' ')
+        try:
+            price = soup.find("p","price").get_text()
+            price = price.split(' ')
 
-        if len(price) == 2:
-            price = price[1]
-        else: price = price[0]
+            if len(price) == 2:
+                price = price[1]
+            else: price = price[0]
 
-        # if price == '₹0.00':
-        #     price = "Not Available"
+            # if price == '₹0.00':
+            #     price = "Not Available"
+        except:
+            price = 'NaN'
+
 
         return price
+
+
+        
 
 
 
