@@ -10,13 +10,11 @@ class scrapper_flipkart:
 
         soup = BeautifulSoup(page.content, 'html.parser')
 
-        if URL != '':
-            try:
-                price = soup.find("div", "_30jeq3 _16Jk6d").get_text()
-            except:
-                price = 'NaN'
 
-        else: price ='NaN'
+        try:
+            price = soup.find("div", "_30jeq3 _16Jk6d").get_text()
+        except:
+            price = 'NaN'
 
 
         return price
